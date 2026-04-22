@@ -7,7 +7,7 @@ import { router } from './router';
 import { ThemeProvider } from './context/ThemeContext';
 
 // Apply saved theme before first render
-const savedTheme = localStorage.getItem('pokedex-theme') ?? 'retro';
+const savedTheme = localStorage.getItem('pokedex-theme') ?? 'dark';
 document.documentElement.setAttribute('data-theme', savedTheme);
 
 const queryClient = new QueryClient({
